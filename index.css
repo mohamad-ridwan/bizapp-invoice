@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.container {
+    /* width: 397px; */
+    width: 320px;
+    height: fit-content;
+    border: 2px solid #000;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.container .header {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    border-bottom: 2px solid #000;
+    padding: 10px 10px 1px 10px;
+}
+
+.container .header .barcode-head {
+    display: flex;
+    align-items: center;
+}
+
+.container .header .logo {
+    height: auto;
+    width: auto;
+    min-width: 40px;
+    max-width: 40px;
+    object-fit: contain;
+}
+
+.container .header .barcode-head .barcode-header-img {
+    height: auto;
+    width: auto;
+    min-width: 240px;
+    max-width: 240px;
+    object-fit: cover;
+}
+/* END HEADER */
+
+/* TO NUMBER */
+.to-number-container {
+    display: flex;
+}
+
+.to-number-container .box-to-number {
+    padding: 3px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    width: 15%;
+}
+
+.to-number-container .box-to-number .to-number {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 7px;
+    margin-bottom: 3px;
+}
+
+.to-number-container .box-to-number .number {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 7px;
+}
+
+.to-number-container .box-desc-to-number {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 3px 10px;
+    border-bottom: 2px solid #000;
+}
+
+.to-number-container .box-desc-to-number .street-address {
+    font-size: 7px;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+.to-number-container .box-desc-to-number .house-number {
+    font-size: 7px;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+.to-number-container .box-desc-to-number .city {
+    font-size: 7px;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+/* END TO NUMBER */
+
+/* RECEIVER COPY */
+.receiver-copy-container{
+    flex-direction: column;
+    display: flex;
+}
+
+.receiver-copy-container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10px;
+}
+
+.receiver-copy-container .header .weight {
+    font-size: 8px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.receiver-copy-container .header .receiver-copy{
+    width: 60%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.receiver-copy-container .header .receiver-copy p{
+    font-size: 9px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.receiver-copy-container .header .monthly {
+    font-size: 8px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.receiver-copy-container .receiver-copy-number{
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+    padding: 5px 10px;
+    border-bottom: 2px solid #000;
+}
+
+.receiver-copy-container .barcode-receiver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding: 2px 10px;
+}
+
+.receiver-copy-container .barcode-receiver .img-barcode-receiver{
+    height: auto;
+    width: auto;
+    min-width: 100px;
+    max-width: 100px;
+    object-fit: contain;
+}
+/* END RECEIVER COPY */
+
+/* PARCEL INFORMATION */
+.parcel-information{
+    padding: 2px 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #000;
+}
+
+.parcel-information p{
+    font-size: 5px;
+    font-weight: normal;
+}
+
+.parcel-information .number{
+    font-size: 5.3px;
+    font-weight: 400;
+}
+/* END PARCEL INFORMATION */
+
+/* REMARKS */
+.remarks-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.remarks-container .remarks{
+    padding: 3px 10px;
+    border-bottom: 2px solid #000;
+}
+
+.remarks-container .remarks p{
+    font-size: 5.3px;
+}
+
+.remarks-container .remarks-content{
+    display: flex;
+    border-bottom: 2px solid #000;
+}
+
+.remarks-container .remarks-content .dispatcher-copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0 1px 0;
+    width: 50%;
+    border-right: 2px solid #000;
+}
+
+.remarks-container .remarks-content .dispatcher-copy p{
+    font-size: 5px;
+    font-style: italic;
+    text-align: start;
+    padding: 5px 10px;
+}
+
+.remarks-container .remarks-content .dispatcher-copy .footer{
+    background-color: #000;
+    padding: 0 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.remarks-container .remarks-content .dispatcher-copy .footer p{
+    font-size: 9px;
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.remarks-container .remarks-content .signature{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 3px;
+}
+
+.remarks-container .remarks-content .signature .title{
+    font-size: 6.5px;
+    font-weight: normal;
+}
+
+.remarks-container .remarks-content .signature .pencil{
+    height: 16px;
+    width: 16px;
+    object-fit: cover;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    z-index: 1;
+}
+
+.remarks-container .remarks-content .signature .monthly{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remarks-container .remarks-content .signature .monthly h1{
+    font-size: 5px;
+    text-transform: uppercase;
+}
+.remarks-container .remarks-barcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding: 2px 10px;
+}
+
+.remarks-container .remarks-barcode .barcode{
+    height: auto;
+    width: auto;
+    min-width: 100px;
+    max-width: 100px;
+    object-fit: contain;
+}
+/* END REMARKS */
+
+/* FOOTER */
+.container .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1px;
+}
+
+.container .footer-content .list{
+    display: flex;
+    flex-direction: column;
+    min-height: 67px;
+}
+
+.container .footer-content .list .parcel-information-footer{
+    font-size: 5px;
+    padding: 10px 0 0 10px;
+}
+
+.container .footer-content .list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.container .footer-content .list ul li{
+    font-size: 5px;
+}
+
+.container .footer-content .sender-copy{
+    background-color: #000;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .footer-content .sender-copy p{
+    font-size: 9px;
+    font-weight: bold;
+    color: #fff;
+}
+/* END FOOTER */
+
+/* PAGE BREAK */
+.page-break{
+    margin-top: 2rem;
+}
