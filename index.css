@@ -17,6 +17,16 @@ body {
     flex-direction: column;
 }
 
+tr{
+    width: 100% !important;
+    display: flex;
+}
+
+td{
+    width: 100% !important;
+    display: flex;
+}
+
 .container {
     /* width: 397px; */
     width: 320px;
